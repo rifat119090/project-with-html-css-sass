@@ -1,0 +1,172 @@
+@import 'color';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.row{
+    width: 100%;
+}
+@for $i from 1 through 12 {
+    .col-#{$i}{
+        width: $i*8.33333334%;
+        float: left;
+    }
+}
+.fix:before, .fix:after{
+    content: "";
+    clear: both;
+    display: table;
+}
+img{
+    width: 100%;
+    vertical-align: middle;
+}
+a{
+    text-decoration: none;
+    color: $black;
+    transition: 0.5s ease-in-out;
+}
+ul{
+    list-style: none;
+}
+// banner bg
+.bg{
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    &:before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top:0;
+        background-color: $black;
+        opacity: .75;
+        z-index: -1;
+    }
+}
+// button css
+.btn{
+    padding: 10px 40px;
+    text-transform: capitalize;
+    font-size: 18px;
+    display: inline-block;
+    border-radius: 3px;
+    color: $white;
+    &.box-btn{
+        background-color:$primary;
+        transition: .3s;
+        &:hover{
+            background-color: $black;
+        }
+    }
+    &.border-btn{
+        border:1px solid  $primary;
+        transition: .3s;
+        &:hover{
+            border:1px solid  $black;
+        }
+    }
+}
+.section-tittle {
+    margin-bottom: 40px;
+    h4 {
+        text-transform: capitalize;
+        font-size: 45px;
+        position: relative;
+        display: inline-block;
+        padding-bottom: 25px;
+        margin-bottom: 20px;
+        &:before {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background:$primary;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+      }
+      p{
+          max-width: 500px;
+          margin: 0 auto;
+      }
+
+  }
+
+ 
+//  margina7padding
+@for $i from 1 through 10 {
+    .pt-#{$i*10}{
+        padding-top:$i*10px;
+    }
+    .pb-#{$i*10}{
+        padding-bottom:$i*10px;
+    }
+    .mt-#{$i*10}{
+        margin-top:$i*10px;
+    }
+    .mb-#{$i*10}{
+        margin-bottom:$i*10px;
+    }
+}
+$list:left,right,center,justify;
+@each $i in $list {
+    .text-#{$i}{
+        text-align: $i;
+    }
+    
+}
+
+
+@media only screen and (min-width:992px)and (max-width:1200px){
+    .container{
+        width: 970px;
+        margin: 0 auto;
+    }
+    .btn {
+        padding: 7px 20px;
+        font-size: 17px;
+    }
+}
+@media only screen and (min-width:768px)and (max-width:991px){
+    .container{
+        width: 750px;
+        margin: 0 auto;
+    }
+    .btn {
+        padding: 7px 20px;
+        font-size: 17px;
+    }
+}
+@media only screen and (max-width:767px){
+    .container{
+        width: 350px;
+        margin: 0 auto;
+    }
+    .btn {
+        padding: 7px 30px;
+        font-size: 17px;
+    }
+    .btn.box-btn {
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (min-width:480px)and (max-width:767px){
+    .container{
+        width: 550px;
+        margin: 0 auto;
+    }
+    .btn {
+        padding: 10px 40px;
+        font-size: 20px;
+    }
+}

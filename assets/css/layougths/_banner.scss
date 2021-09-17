@@ -1,0 +1,112 @@
+
+.banner-content {
+    h2 {
+        font-size: 45px;
+        font-weight: 700;
+        color: white;
+      }
+      p {
+        max-width: 500px;
+        margin: 30px auto;
+        font-size: 18px;
+        color: #fff;
+      }
+      a{
+          margin: 0 30px;
+      }
+}
+.about-banner  {
+
+       h2{
+          font-size: 50px;
+          font-style: italic;
+          font-weight: 700;
+          text-align: center;
+        }
+}
+
+.services-banner  {
+  h2{ 
+    font-size: 50px;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-style: italic;
+}
+
+}
+
+.portfolio-banner {
+    h2 {
+       font-size: 50px;
+       text-transform: capitalize;
+       font-style: italic;
+       font-weight: 700;
+    }
+
+}
+
+
+.blog-banner h2 {
+  font-size: 50px;
+  font-weight: 700;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+
+
+.contact-banner h2 {
+  font-size: 50px;
+  text-transform: capitalize;
+  font-style: italic;
+  font-weight: 700;
+}
+
+
+@media only screen and (min-width:992px)and (max-width:1200px){
+  .banner-content h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+  }
+  .banner-content p {
+    max-width: 415px;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width:768px)and (max-width:991px){
+  .banner-content h2 {
+    font-size: 37px;
+    font-weight: 700;
+    color: white;
+  }
+  .banner-content p {
+    max-width: 400px;
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width:767px){
+  .banner-content p {
+    max-width: 415px;
+    font-size: 16px;
+  }
+  .banner-content h2 {
+    font-size: 35px;
+    line-height: 1.2;
+    max-width: 310px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width:480px)and (max-width:767px){
+  .banner-content p {
+    max-width: 415px;
+    font-size: 16px;
+  }
+  .banner-content h2 {
+    font-size: 35px;
+    line-height: 1.2;
+    max-width: 310px;
+    margin: 0 auto;
+  }
+}

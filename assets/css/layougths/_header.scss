@@ -1,0 +1,147 @@
+  .header-area {
+    padding: 20px 0;
+    .logo{
+        a {
+            font-size: 28px;
+            font-weight: 900;
+          }
+    }
+    .menu {
+        ul{
+            text-align: right;
+            li{
+                display: inline-block;
+                position: relative;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    background: $red;
+                    width: 0%;
+                    height: 2px;
+                    bottom: -5px;
+                    left: 0;
+                
+                }
+                &:after{
+                    content: '';
+                    position: absolute;
+                    background: $red;
+                    width: 0%;
+                    height: 2px;
+                    bottom: -5px;
+                    right: 0;
+                }
+                &:hover::before, &:hover::after{
+                    transition: .3s;
+                    width: 50%;
+                }
+                a {
+                    padding: 0px 20px;
+                    font-size: 20px;
+                    font-weight: 700;
+                    &:hover{
+                        color: $primary;
+                    }
+                  }
+               
+            }
+        }
+      }
+  }
+  @media only screen and (min-width:992px)and (max-width:1200px){
+    .header-area .logo a {
+        font-size: 22px ;
+    }
+    .header-area .menu ul li a {
+        padding: 0px 12px;
+        font-size: 18px;
+    }
+  }
+  @media only screen and (min-width:768px)and (max-width:991px){
+    .header-area .logo a {
+        font-size: 17px ;
+    }
+    .header-area .menu ul li a {
+        padding: 0px 9px;
+        font-size: 17px;
+    }
+  }
+  @media only screen and (max-width:767px){
+    .cols-12{
+        width: 100%;
+        float: left;
+    }
+    .text-align{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .header-area .logo a {
+        font-size: 24px;
+        background-color: blue;
+        color: #fff;
+        padding: 11px 5px;
+        border-radius: 10px;
+    }
+    .header-area .menu ul {
+        text-align: center;
+        margin-top: 17px;
+    }
+    .header-area .menu ul li {
+        display: block;
+        position: relative;
+        // margin: 20px 10px;
+    }
+    .header-area .menu ul li a {
+        font-size: 20px;
+        display: block;
+        padding: 10px 20px;
+    }
+    .header-area .menu ul li a:hover {
+        background:$black;
+        color: #fff;
+        border-radius: 10px;
+        transition: .5s ease-in-out;
+    }
+
+  }
+  @media only screen and (min-width:480px)and (max-width:767px){
+    .cols-12{
+        width: 100%;
+        float: left;
+    }
+    .text-align{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .header-area .logo a {
+        font-size: 30px;
+        background-color: blue;
+        color: #fff;
+        padding: 10px 63px;
+        border-radius: 10px;
+    }
+    .header-area .menu ul {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .header-area .menu ul li {
+        display: block;
+        position: relative;
+        // margin: 20px 10px;
+    }
+    .header-area .menu ul li:active{
+        background-color:$black ;
+    }
+    .header-area .menu ul li a {
+        font-size: 20px;
+        display: block;
+        padding: 10px 20px;
+    }
+    .header-area .menu ul li a:hover {
+        background:$black;
+        color: #fff;
+        border-radius: 10px;
+        transition: .5s ease-in-out;
+    }
+
+  }

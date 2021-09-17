@@ -1,0 +1,146 @@
+
+
+
+.single-about {
+    border: 1px solid #f0f0f0;
+    margin-right: 30px;
+    padding: 35px 15px;
+    h4 {
+        font-size: 30px;
+        margin: 10px 0;
+        font-weight: 700;
+        text-transform: capitalize;
+      }
+      p {
+        text-align: center;
+        font-size: 17px;
+        margin: 20px auto;
+        line-height: 1.4;
+      }
+      a {
+        margin: 10px 0;
+        color: black;
+        font-size: 24px;
+        font-weight: 500;
+      }
+  }
+  .about-single  {
+    .single-about{
+      margin-bottom: 20px;
+    }
+    
+  }
+
+
+  @media only screen and (min-width:992px)and (max-width:1200px){
+    .section-tittle h4 {
+      font-size: 40px;
+    }
+    .section-tittle p {
+      max-width: 420px;
+    }
+    .single-about {
+      margin-right: 15px;
+      margin-left: 15px;
+    }
+    .single-about h4 {
+      font-size: 25px;
+    }
+    .single-about p {
+      font-size: 15px;
+    }
+    .single-about a {
+      font-size: 20px;
+
+    }
+}
+  
+  
+@media only screen and (min-width:768px)and (max-width:991px){
+  .section-tittle h4 {
+    font-size: 37px;
+  }
+  .section-tittle p {
+    max-width: 400px;
+  }
+  .cols-6{
+    width: 50%;
+    float: left;
+  }
+  .single-about {
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
+  .single-about h4 {
+    font-size: 25px;
+  }
+  .single-about p {
+    font-size: 15px;
+  }
+  .single-about a {
+    font-size: 20px;
+
+  }
+}
+
+@media only screen and(max-width:767px){
+  .section-tittle h4 {
+    font-size:37px;
+  }
+  .section-tittle p {
+    max-width: 380px;
+  }
+  .cols-12{
+    width: 100%;
+    float: left;
+  }
+  .single-about {
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    background-color: #ddd;
+
+  }
+  .single-about h4 {
+    font-size: 35px;
+  }
+  .single-about p {
+    font-size: 18px;
+  }
+  .single-about a {
+    font-size: 25px;
+
+  }
+}
+
+@media only screen and (min-width:480px)and (max-width:767px){
+  .section-tittle h4 {
+    font-size:37px;
+  }
+  .section-tittle p {
+    max-width: 380px;
+  }
+  .cols-12{
+    width: 100%;
+    float: left;
+  }
+  .single-about {
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    background-color: #ddd;
+
+  }
+  .single-about h4 {
+    font-size: 35px;
+  }
+  .single-about p {
+    font-size: 18px;
+  }
+  .single-about a {
+    font-size: 25px;
+
+  }
+}
+
